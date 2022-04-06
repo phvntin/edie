@@ -11,12 +11,21 @@
   flex-direction: $dir;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    max-width: 768px;
+@mixin responsive($width) {
+  @media screen and (max-width: $width) {
+    @content;
   }
 }
 
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+
+  @include responsive(767px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 @import "./navbar";
 @import "./part-one";
 @import "./part-two";

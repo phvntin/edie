@@ -1,128 +1,146 @@
 .part-one {
-  margin-top: 100px;
-  & > div {
-    margin-left: 200px;
+  margin-top: 6.25rem;
+
+  @include responsive(767px) {
+    margin-top: 1.5rem;
   }
+
+  & > div {
+    margin-left: 12.5rem;
+
+    @include responsive(767px) {
+      margin-left: 1.875rem;
+    }
+  }
+
   &-create {
+    @include responsive(767px) {
+      max-width: 17rem;
+    }
+
     span {
-      margin-bottom: 16px;
-      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-size: 1.125rem;
       font-weight: 500;
       color: #2d9cdb;
       display: block;
+
+      @include responsive(767px) {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+      }
     }
+
     h3 {
-      max-width: 543px;
-      font-size: 4.8rem;
+      max-width: 33.875rem;
+      font-size: 3rem;
       font-weight: 500;
+
+      @include responsive(767px) {
+        font-size: 1.5rem;
+      }
     }
   }
+
   &-image {
     border-radius: 18px;
-    margin: 42px 0;
-  }
-  &-story {
-    h3 {
-      max-width: 366px;
-      margin-bottom: 42px;
-      font-size: 4.8rem;
-      font-weight: 500;
+    margin: 2.625rem 0;
+    object-fit: content;
+
+    @include responsive(767px) {
+      margin: 1.375rem 0;
+      height: 9.125rem;
     }
+  }
+
+  &-story {
+    max-width: 22.875rem;
+
+    h3 {
+      margin-bottom: 2.625rem;
+      font-size: 3rem;
+      font-weight: 500;
+
+      @include responsive(767px) {
+        max-width: 14.125rem;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+      }
+    }
+
     span {
       color: #4f4f4f;
-      max-width: 366px;
-      margin-bottom: 42px;
-      font-size: 1.8rem;
-      font-weight: 400;
       display: block;
+      margin-bottom: 2.625rem;
+      font-size: 1.125rem;
+      font-weight: 400;
+
+      @include responsive(767px) {
+        margin-bottom: 2rem;
+        font-size: 0.75rem;
+        max-width: 17.125rem;
+      }
     }
   }
+
   &-contact {
     span {
-      font-size: 1.4rem;
-      font-weight: 500;
       color: #828282;
-      margin-bottom: 10px;
       display: block;
+      margin-bottom: 0.625rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+
+      @include responsive(767px) {
+        font-size: 0.625rem;
+      }
     }
+
     div {
       background-color: #f2f2f2;
       border-radius: 12px;
-      max-width: 350px;
+      max-width: 21.875rem;
       display: block;
       @include flexbox(center, space-around);
       transition: all 0.3s ease;
+
+      @include responsive(767px) {
+        max-width: 18.125rem;
+      }
+
       &:hover {
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
       }
+
       input {
         border: none;
         background: transparent;
         padding: 15px 0 15px 18px;
-        font-size: 1.8rem;
+        font-size: 1.125rem;
         font-weight: 500;
+
         &::placeholder {
           color: #bdbdbd;
         }
+
+        @include responsive(767px) {
+          padding: 1rem 0 1rem 1.125rem;
+          font-size: 0.875rem;
+        }
       }
+
       button {
         border: none;
-        padding: 11px 28px;
-        font-size: 1.8rem;
+        padding: 0.625rem 1.75rem;
+        font-size: 1.125rem;
         color: #fff;
         background-color: #2d9cdb;
         border-radius: 12px;
-      }
-    }
-  }
-}
 
-@media (max-width: 768px) {
-  .part-one {
-    margin-top: 50px;
-    & > div {
-      margin-left: 30px;
-    }
-    &-create {
-      max-width: 272px;
-      span {
-        font-size: 1.2rem;
-        margin-bottom: 0;
-      }
-      h3 {
-        font-size: 2.4rem;
-      }
-    }
-    &-image {
-      margin: 22px 0;
-    }
-    &-story {
-      h3 {
-        max-width: 227px;
-        margin-bottom: 0;
-        font-size: 2.4rem;
-      }
-      span {
-        max-width: 275px;
-        margin: 30px 0;
-        font-size: 1.2rem;
-      }
-    }
-    &-contact {
-      span {
-        font-size: 1rem;
-        margin-bottom: 0;
-      }
-      div {
-        max-width: 290px;
-        input {
-          padding: 15px 0 15px 18px;
-          font-size: 1.4rem;
-        }
-        button {
-          padding: 11px 20px;
-          font-size: 1.4rem;
-          margin-left: 25px;
+        @include responsive(767px) {
+          padding: 0.625rem 1.25rem;
+          font-size: 0.875rem;
+          margin-left: 1.5rem;
         }
       }
     }
