@@ -11,12 +11,6 @@
     <link rel="icon" href="devchallenges.png" />
 
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
@@ -31,27 +25,27 @@
     <title>Devchallenges</title>
   </head>
   <body>
-    <nav class="navbar container">
+    <nav class="navbar">
       <div class="navbar-logo">
-        <a href="#">Edie</a>
+        <a href="">Edie</a>
       </div>
 
       <div class="navbar-menu">
         <ul class="navbar-list">
-          <li class="navbar-item active">
-            <a href="#" class="navbar-link active">Home</a>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link active">Home</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Services</a>
+            <a href="#services" class="navbar-link">Services</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Our works</a>
+            <a href="#our-works" class="navbar-link">Our works</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Clients</a>
+            <a href="#clients" class="navbar-link">Clients</a>
           </li>
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#contact" class="navbar-link">Contact</a>
           </li>
         </ul>
       </div>
@@ -63,7 +57,7 @@
       </div>
     </nav>
 
-    <section class="part-one container">
+    <section id="home" class="part-one container">
       <div class="part-one-create">
         <span>Unhappy with your website?</span>
         <h3>We create beautiful and fast web services</h3>
@@ -88,12 +82,12 @@
       </div>
     </section>
 
-    <section class="part-two container">
-      <div class="part-two-heading">
+    <section id="services" class="part-two container">
+      <div class="part-two-heading container-2">
         <h4>We offer high demand services</h4>
       </div>
 
-      <div class="part-two-content">
+      <div class="part-two-content container-2">
         <div class="item">
           <div class="item-icon">
             <i class="fa-solid fa-pen"></i>
@@ -131,12 +125,12 @@
       </div>
     </section>
 
-    <section class="part-three container">
-      <div class="part-three-heading">
+    <section id="our-works" class="part-three container">
+      <div class="part-three-heading container-2">
         <h4>Good design means good business</h4>
       </div>
 
-      <div class="part-three-content">
+      <div class="part-three-content container-2">
         <div class="part-three-item">
           <img src="./img/smarthome.jpg" alt="" />
           <span>Full stack application</span>
@@ -164,6 +158,78 @@
       </div>
     </section>
 
-    <section class="part-four container"></section>
+    <section id="clients" class="part-four container">
+      <div class="part-four-content container-2">
+        <div class="content-text">
+          <h6>Meet the team</h6>
+          <h4>We are chilled and a laidback team</h4>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+        </div>
+
+        <div class="content-img">
+          <div class="content-img-item">
+            <img src="./img/person3.png" />
+          </div>
+          <div class="content-img-item">
+            <img src="./img/person1.png" />
+            <img src="./img/person2.png" />
+          </div>
+        </div>
+      </div>
+
+      <div class="part-four-quote container-2">
+        <h4>
+          “Fast and outstanding resutls. Edie understands their customer’s
+          needs. They have a young and talented team.”
+        </h4>
+
+        <div class="profile">
+          <img src="./img/person4.png" />
+          <div class="profile-name">
+            <h5>Carlos Tran</h5>
+            <span>The Decorate Gatsby</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="footer-content">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Our Works</li>
+          <li>Clients</li>
+          <li>Contact</li>
+        </ul>
+
+        <div class="socials">
+          <h4>Edie</h4>
+          <div class="socials-list">
+            <a href="#" class="socials-link">
+              <i class="fa-brands fa-instagram-square"></i>
+            </a>
+            <a href="#" class="socials-link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" class="socials-link">
+              <i class="fa-brands fa-twitter-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact">
+          <span>Want us to contact you?</span>
+          <div>
+            <input type="email" placeholder="Email" />
+            <button>Join</button>
+          </div>
+        </div>
+      </div>
+
+      <small>create by <a href="">phvntin</a> - devChallenges.io</small>
+    </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>

@@ -1,9 +1,5 @@
 .part-one {
-  margin-top: 6.25rem;
-
-  @include responsive(767px) {
-    margin-top: 1.5rem;
-  }
+  padding-top: 6.25rem;
 
   & > div {
     margin-left: 12.5rem;

@@ -26,7 +26,14 @@
     padding-right: 1rem;
   }
 }
+
+.container-2 {
+  margin: 0 5rem;
+}
+
 @import "./navbar";
 @import "./part-one";
 @import "./part-two";
 @import "./part-three";
+@import "./part-four";
+@import "./footer";

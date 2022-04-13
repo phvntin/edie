@@ -1,0 +1,108 @@
+.part-four {
+  padding-top: 9rem;
+  padding-bottom: 6rem;
+
+  @include responsive(767px) {
+    padding-top: 6.25rem;
+    padding-bottom: 3rem;
+  }
+
+  &-content {
+    @include flexbox(center, flex-start);
+
+    @include responsive(767px) {
+      margin: 0;
+      gap: 2.25rem;
+    }
+  }
+
+  &-quote {
+    margin-top: 12.25rem;
+
+    @include responsive(767px) {
+      margin-top: 6.25rem;
+      margin-left: unset;
+      margin-right: unset;
+    }
+
+    h4 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      max-width: 58.5rem;
+      margin-bottom: 2.25rem;
+
+      @include responsive(767px) {
+        font-size: 1.5rem;
+        max-width: 21.875rem;
+      }
+    }
+
+    .profile {
+      @include flexbox(center, flex-start);
+
+      img {
+        width: 4.75rem;
+        height: 4.75rem;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-right: 2rem;
+      }
+
+      &-name {
+        h5 {
+          font-size: 1.5rem;
+          font-weight: 500;
+          margin-bottom: 0.75rem;
+        }
+
+        span {
+          font-size: 1.125rem;
+          color: #828282;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  &-text {
+    h6 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #eb5757;
+    }
+
+    h4 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      max-width: 17.5rem;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 400;
+      display: block;
+      max-width: 17.5rem;
+    }
+  }
+
+  &-img {
+    margin-left: auto;
+    @include flexbox(center, flex-end);
+    gap: 1rem;
+
+    @include responsive(767px) {
+      flex-wrap: nowrap;
+    }
+
+    img {
+      border-radius: 24px;
+    }
+
+    &-item:last-child {
+      img:first-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
